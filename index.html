@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonctions Cognitives Interactives</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Les Fonctions Cognitives dans les Apprentissages</h1>
+    
+    <!-- Modules d'entrée -->
+    <section id="modules-entree">
+      <h2>1. Modules d'entrée</h2>
+      <div class="module" onclick="showMessage('Visuelle', 'Capte et reconnaît les informations visuelles')">Visuelle</div>
+      <div class="module" onclick="showMessage('Auditive', 'Capte et traite les informations sonores')">Auditive</div>
+      <div class="module" onclick="showMessage('Kinesthésique', 'Reconnaît les informations corporelles et sensorielles')">Kinesthésique</div>
+    </section>
+    
+    <!-- Traitement -->
+    <section id="traitement">
+      <h2>2. Traitement de l'information</h2>
+      <div class="module" onclick="showMessage('Mémoire de travail', 'Permet de sélectionner, activer et traiter l’information en temps réel')">Mémoire de travail</div>
+      <div class="module" onclick="showMessage('Mémoire à long terme', 'Stocke et rappelle les informations')">Mémoire à long terme</div>
+      <div class="module" onclick="showMessage('Fonctions exécutives', 'Planifie, inhibe et gère les charges cognitives')">Fonctions exécutives</div>
+      <div class="module" onclick="showMessage('Métacognition', 'Permet de s’auto-analyser et d’optimiser les stratégies d’apprentissage')">Métacognition</div>
+      <div class="module" onclick="showMessage('Langage oral', 'Comprend les informations exprimées oralement')">Langage oral</div>
+      <div class="module" onclick="showMessage('Raisonnement', 'Maintient les informations en mémoire et les traite pour en déduire des solutions')">Raisonnement</div>
+    </section>
+    
+    <!-- Modules de sortie -->
+    <section id="modules-sortie">
+      <h2>3. Modules de sortie</h2>
+      <div class="module" onclick="showMessage('Graphique', 'Produit des informations visuelles, comme écrire ou dessiner')">Graphique</div>
+      <div class="module" onclick="showMessage('Orale', 'Exprime des informations verbalement')">Orale</div>
+      <div class="module" onclick="showMessage('Motrice', 'Exprime des informations par des gestes ou actions physiques')">Motrice</div>
+    </section>
+  </div>
+
+  <!-- Boîte de message -->
+  <div id="message-box" class="hidden">
+    <div id="message-content">
+      <h3 id="message-title"></h3>
+      <p id="message-text"></p>
+      <button onclick="hideMessage()">Fermer</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
